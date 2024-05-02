@@ -3781,6 +3781,42 @@ table.alt tbody tr td {
 
 }
 
+/*Logo and Title*/
+
+.logo-and-title {
+	display: flex;
+	align-items: center;
+
+	/* Adjusts vertical alignment so logo aligns with top of text */
+	h1 {
+		margin-bottom: 0;
+		/* Reduces the space below the h1 element */
+	}
+}
+
+.logo {
+	margin-right: 20px;
+	/* Space between the logo and the text */
+	max-width: 200px;
+	/* Adjust size as needed */
+	display: flex;
+	flex-direction: column;
+	/* Stacks the elements inside vertically */
+	align-items: flex-start;
+	/* Aligns items to the left */
+}
+
+.title-block {
+	display: flex;
+	flex-direction: column;
+	/* Stacks the elements inside vertically */
+	align-items: flex-start;
+	/* Aligns items to the left */
+	margin-top: 100px;
+	margin-bottom: -20px;
+
+}
+
 /* Header */
 
 #header {
@@ -3813,7 +3849,7 @@ table.alt tbody tr td {
 #header button,
 #header .button {
 	background-color: transparent;
-	color: #ffffff !important;
+	color: #000000 !important;
 	box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
 }
 
@@ -3976,7 +4012,7 @@ table.alt tbody tr td {
 
 #header a {
 	color: inherit;
-	border-bottom-color: rgba(255, 255, 255, 0.5);
+	border-bottom-color: rgb(0, 0, 0);
 	color: #000000;
 }
 
@@ -4010,7 +4046,7 @@ table.alt tbody tr td {
 #header h1 {
 	font-size: 3.25em;
 	font-weight: bold;
-	margin-bottom: 0.5em;
+	margin-bottom: 0em;
 }
 
 #header p {
