@@ -4376,3 +4376,24 @@ body.is-preload #header .image img {
 	}
 
 }
+
+.logo-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* Vertical alignment */
+	text-decoration: none;
+	/* Removes underline from the hyperlink */
+}
+
+.logo-link img {
+	margin-right: 10px;
+	/* Adds some space between the logo and the text */
+}
+
+.logo-link span {
+	color: black;
+	/* Text color */
+	font-size: 20px;
+	/* Adjust the font size as needed */
+}
