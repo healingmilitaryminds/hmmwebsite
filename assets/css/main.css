@@ -3786,34 +3786,37 @@ table.alt tbody tr td {
 .logo-and-title {
 	display: flex;
 	align-items: center;
-
-	/* Adjusts vertical alignment so logo aligns with top of text */
-	h1 {
-		margin-bottom: 0;
-		/* Reduces the space below the h1 element */
-	}
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
 }
 
 .logo {
-	margin-right: 20px;
-	/* Space between the logo and the text */
-	max-width: 200px;
+	margin: 0 auto;
+	max-width: 150px;
 	/* Adjust size as needed */
-	display: flex;
-	flex-direction: column;
-	/* Stacks the elements inside vertically */
-	align-items: flex-start;
-	/* Aligns items to the left */
 }
 
 .title-block {
-	display: flex;
-	flex-direction: column;
-	/* Stacks the elements inside vertically */
-	align-items: flex-start;
-	/* Aligns items to the left */
-	margin-top: 100px;
-	margin-bottom: -20px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+	.logo-and-title {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.logo {
+		margin: 0 auto;
+		max-width: 100px;
+		/* Adjust size as needed */
+	}
+
+	.title-block {
+		margin-top: 10px;
+	}
 
 }
 
@@ -4403,9 +4406,9 @@ body.is-preload #header .image img {
 
 #top-right-actions {
 	position: fixed;
-	top: 0px;
+	top: 10px;
 	/* Adjust as needed */
-	right: 0px;
+	right: 10px;
 	/* Adjust as needed */
 	list-style-type: none;
 	/* Remove bullet points */
@@ -4413,6 +4416,8 @@ body.is-preload #header .image img {
 	/* Remove default margin */
 	padding: 0;
 	/* Remove default padding */
+	z-index: 1000;
+	/* Ensure it stays on top */
 }
 
 #top-right-actions li {
@@ -4443,4 +4448,13 @@ body.is-preload #header .image img {
 	/* Adjust hover background color as needed */
 }
 
--------------------------
+@media screen and (max-width: 768px) #top-right-actions {
+	position: static;
+	text-align: center;
+	margin: 10px 0;
+}
+
+#top-right-actions li {
+	display: block;
+	margin: 10px 0;
+}
