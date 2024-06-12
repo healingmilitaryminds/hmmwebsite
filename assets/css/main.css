@@ -4359,53 +4359,9 @@ body.is-preload #header .image img {
 	font-size: 0.8em;
 }
 
-@media screen and (max-width: 980px) {
-
-	#footer {
-		padding: 4em 4em 2em 4em;
-	}
-
-}
-
-@media screen and (max-width: 736px) and (orientation: landscape) {
-
-	#footer {
-		padding: 3em 3em 1em 3em;
-	}
-
-}
-
-@media screen and (max-width: 736px) and (orientation: portrait) {
-
-	#footer {
-		padding: 3em 1.5em 1em 1.5em;
-	}
-
-}
-
-.logo-link {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	/* Vertical alignment */
-	text-decoration: none;
-	/* Removes underline from the hyperlink */
-}
-
-.logo-link img {
-	margin-right: 10px;
-	/* Adds some space between the logo and the text */
-}
-
-.logo-link span {
-	color: black;
-	/* Text color */
-	font-size: 20px;
-	/* Adjust the font size as needed */
-}
-
+/* Responsive adjustments for top-right-actions */
 #top-right-actions {
-	position: fixed;
+	position: static;
 	top: 10px;
 	/* Adjust as needed */
 	right: 10px;
@@ -4448,7 +4404,42 @@ body.is-preload #header .image img {
 	/* Adjust hover background color as needed */
 }
 
+/* Responsive adjustments for logo and title */
+.logo-and-title {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+
+.logo {
+	margin: 0 auto;
+	max-width: 150px;
+	/* Adjust size as needed */
+}
+
+.title-block {
+	margin-top: 10px;
+	text-align: center;
+}
+
 @media screen and (max-width: 768px) {
+	.logo-and-title {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.logo {
+		margin: 0 auto;
+		max-width: 100px;
+		/* Adjust size as needed */
+	}
+
+	.title-block {
+		margin-top: 10px;
+	}
+
 	#top-right-actions {
 		position: static;
 		text-align: center;
@@ -4458,5 +4449,17 @@ body.is-preload #header .image img {
 	#top-right-actions li {
 		display: block;
 		margin: 10px 0;
+	}
+
+	#header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#header .content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 }
