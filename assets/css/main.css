@@ -4448,13 +4448,15 @@ body.is-preload #header .image img {
 	/* Adjust hover background color as needed */
 }
 
-@media screen and (max-width: 768px) #top-right-actions {
-	position: static;
-	text-align: center;
-	margin: 10px 0;
-}
+@media screen and (max-width: 768px) {
+	#top-right-actions {
+		position: static;
+		text-align: center;
+		margin: 10px 0;
+	}
 
-#top-right-actions li {
-	display: block;
-	margin: 10px 0;
+	#top-right-actions li {
+		display: block;
+		margin: 10px 0;
+	}
 }
