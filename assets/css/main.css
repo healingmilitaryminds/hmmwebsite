@@ -3819,7 +3819,10 @@ table.alt tbody tr td {
 
 /* Header */
 
+
+
 #header {
+
 	background-color: #ffffff;
 	color: #000000;
 	padding: 4.5em 0 2.5em 0;
@@ -4397,3 +4400,47 @@ body.is-preload #header .image img {
 	font-size: 20px;
 	/* Adjust the font size as needed */
 }
+
+#top-right-actions {
+	position: fixed;
+	top: 0px;
+	/* Adjust as needed */
+	right: 0px;
+	/* Adjust as needed */
+	list-style-type: none;
+	/* Remove bullet points */
+	margin: 0;
+	/* Remove default margin */
+	padding: 0;
+	/* Remove default padding */
+}
+
+#top-right-actions li {
+	display: inline-block;
+	/* Make list items inline */
+	margin-left: 10px;
+	/* Add space between buttons */
+}
+
+#top-right-actions li a {
+	display: block;
+	padding: 10px 15px;
+	/* Adjust padding as needed */
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	/* Adjust text color as needed */
+	background-color: #ffffff;
+	/* Adjust background color as needed */
+	border: none;
+	border-radius: 50px;
+	outline: none;
+	box-shadow: none;
+	/* Adjust border radius as needed */
+}
+
+#top-right-actions li a:hover {
+	background-color: #ffffff;
+	/* Adjust hover background color as needed */
+}
+
+-------------------------

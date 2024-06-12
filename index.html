@@ -7,7 +7,7 @@
 <html>
 
 <head>
-	<title>Healing MIlitary Minds</title>
+	<title>Healing Military Minds</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta property="og:title" content="HMM">
@@ -23,6 +23,14 @@
 </head>
 
 <body class="is-preload">
+	<ul id="top-right-actions" class=" actions">
+		<li><a href="#why" class="button icon solid fa-chevron-down scrolly">Ball 2024</a></li>
+		<li><a href="#gram" class="button icon solid fa-chevron-down scrolly">What We've Been Up To</a>
+		<li><a href="#tix" class="button icon solid fa-chevron-down scrolly">Buy Tickets & Support
+				Us</a></li>
+		</li>
+		<!-- <li><a href="#about" class="button icon solid fa-chevron-down scrolly">About Us</a></li> -->
+	</ul>
 
 	<!-- Header -->
 	<header id="header">
@@ -33,17 +41,58 @@
 				<div class="title-block">
 					<h1><a href="#">Healing Military Minds</a></h1>
 					<p class="subtitle">The Tri Service fundraising machine for Combat Stress</p>
-					<ul class="actions">
-						<li><a href="#one" class="button icon solid fa-chevron-down scrolly">Learn More</a></li>
-					</ul>
+
 				</div>
 			</div>
+			<br>
+			<br>
 		</div>
 	</header>
 
-	<!-- One -->
-	<section id="one" class="wrapper style2 special">
-		<h1> Buy tickets for our events!</h1>
+	<section id="why" class="wrapper style2 special">
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				overflow-x: hidden;
+				/* Ensure no horizontal scroll */
+			}
+
+			.video-container {
+				position: relative;
+				width: 100%;
+				height: 0;
+				padding-bottom: 56.25%;
+				/* 16:9 aspect ratio */
+			}
+
+			.video-container iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+		<div class="video-container">
+			<iframe src="https://www.youtube.com/embed/1jM6P5WLsAw?autoplay=1&mute=1&rel=0"
+				allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</video>
+		</div>
+	</section>
+
+	<section id="gram" class="wrapper">
+		<header class="major">
+			<h2>What We've Been Up To</h2>
+		</header>
+		<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+		<div class="elfsight-app-ed10b0bc-998a-4495-8fb6-bd26ac08bf49" data-elfsight-app-lazy></div>
+	</section>
+
+	<section id="tix" class="wrapper style2 special">
+		<header class="major">
+			<h2> Buy tickets for our events!</h2>
+		</header>
 		<!-- Ticket Tailor Widget. Paste this into your website where you want the widget to appear. Do not change the code or the widget may not work properly. -->
 		<div class="tt-widget">
 			<div class="tt-widget-fallback">
@@ -60,28 +109,10 @@
 	</section>
 
 	<!-- Two -->
-	<section id="two" class="wrapper">
-		<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-		<div class="elfsight-app-ed10b0bc-998a-4495-8fb6-bd26ac08bf49" data-elfsight-app-lazy></div>
-	</section>
 
-	<!-- Three -->
-	<!-- 
-	<section id="three" class="wrapper style2 special">
-		<header class="major">
-			<h2>Magna leo sapien gravida</h2>
-			<p>Gravida at leo elementum elit fusce accumsan dui libero, quis vehicula<br />
-				lectus ultricies eu. In convallis amet leo sapien iaculis efficitur.</p>
-		</header>
-		<ul class="actions special">
-			<li><a href="#" class="button primary icon solid fa-download">Download</a></li>
-			<li><a href="#" class="button">Learn More</a></li>
-		</ul>
-	</section>
--->
+
 	<!-- Four -->
-	<!--
-	<section id="four" class="wrapper">
+	<!-- <section id="about" class="wrapper">
 		<div class="inner">
 
 			<header class="major">
@@ -94,7 +125,8 @@
 					<em>emphasized</em>.
 					This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
 					This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this
-						is a link</a>.</p>
+						is a link</a>.
+				</p>
 				<hr />
 				<header>
 					<h4>Heading with a Subtitle</h4>
@@ -433,8 +465,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</section>
 
 		</div>
-	</section>
-	-->
+	</section> -->
+
 	<!-- Footer -->
 	<footer id="footer">
 		<!-- Hyperlink wrapping the image and text -->
