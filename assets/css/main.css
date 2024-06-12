@@ -4359,9 +4359,9 @@ body.is-preload #header .image img {
 	font-size: 0.8em;
 }
 
-/* Responsive adjustments for top-right-actions */
+/* Default styling for top-right-actions */
 #top-right-actions {
-	position: static;
+	position: fixed;
 	top: 10px;
 	/* Adjust as needed */
 	right: 10px;
@@ -4404,11 +4404,10 @@ body.is-preload #header .image img {
 	/* Adjust hover background color as needed */
 }
 
-/* Responsive adjustments for logo and title */
+/* Default styling for logo and title */
 .logo-and-title {
 	display: flex;
 	align-items: center;
-	flex-wrap: wrap;
 	justify-content: center;
 	text-align: center;
 }
@@ -4424,6 +4423,7 @@ body.is-preload #header .image img {
 	text-align: center;
 }
 
+/* Mobile-specific styling */
 @media screen and (max-width: 768px) {
 	.logo-and-title {
 		flex-direction: column;
@@ -4440,26 +4440,23 @@ body.is-preload #header .image img {
 		margin-top: 10px;
 	}
 
-	#top-right-actions {
-		position: static;
-		text-align: center;
-		margin: 10px 0;
-	}
-
-	#top-right-actions li {
-		display: block;
-		margin: 10px 0;
-	}
-
-	#header {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
 	#header .content {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+
+	#top-right-actions {
+		position: static;
+		margin: 10px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#top-right-actions li {
+		display: block;
+		margin: 5px 0;
+		/* Adjust as needed for spacing */
 	}
 }
