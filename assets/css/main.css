@@ -4460,3 +4460,31 @@ body.is-preload #header .image img {
 		/* Adjust as needed for spacing */
 	}
 }
+
+.instagram-embed-section {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.instagram-embed {
+	width: 100%;
+	max-width: 2048px;
+	/* Set a max-width to keep the original aspect ratio */
+	height: auto;
+	position: relative;
+	padding-bottom: 45%;
+	/* Aspect ratio 4:5 (common for Instagram profiles) */
+	overflow: hidden;
+}
+
+.instagram-embed iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
